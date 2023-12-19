@@ -1,0 +1,49 @@
+{
+  "name": "lambda-sample",
+  "version": "1.0.0",
+  "description": "Lambda sample",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "start:local": "nodemon --exec \"serverless offline start\" --noTimeout",
+    "offline-s3-event": "serverless invoke local --function list-s3-objects --path event-s3.json",
+    "eslint": "eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "aws-lambda-cors": "0.0.2",
+    "aws-sdk": "2.1296.0",
+    "axios": "1.2.3",
+    "enjoi": "9.0.1",
+    "jsonwebtoken": "9.0.0",
+    "pg": "8.8.0",
+    "sequelize": "6.28.0",
+    "unzipper": "0.10.11",
+    "winston": "3.8.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "8.32.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "jest": "29.4.1",
+    "nodemon": "2.0.20",
+    "prettier": "2.8.3",
+    "serverless": "3.23.0",
+    "serverless-offline": "9.3.1"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "{{event.platform}}",
+    "{{event.name}}"
+  ],
+  "author": "Devops Platform - Natura &Co Group",
+  "license": "ISC"
+}

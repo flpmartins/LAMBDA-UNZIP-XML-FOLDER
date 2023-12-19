@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "sa-east-1",
+      "eventTime": "2023-12-15T17:39:24.815Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "A3A4ZI7T7CXE2J"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "189.103.160.69"
+      },
+      "responseElements": {
+        "x-amz-request-id": "KXAADEX1Y3KBFSGC",
+        "x-amz-id-2": "9T9v9sA08DAE7X9DnqTLD/Sp2x5TBfeiPXujAoY4OcFM2imbWJ10UzMbzylYM+Kg3V4Np3ANU0r/d3Y6fe19SO9w19xoim5z"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "hello-world",
+        "bucket": {
+          "name": "flpmartins",
+          "ownerIdentity": {
+            "principalId": "A3A4ZI7T7CXE2J"
+          },
+          "arn": "arn:aws:s3:::flpmartins"
+        },
+        "object": {
+          "key": "cidade/WhatsApp+Image+2023-11-14+at+3.41.59+PM+%282%29.jpeg",
+          "size": 201730,
+          "eTag": "20edf69dda7a4bcd66aba1dbba08b95a",
+          "sequencer": "00657C8F4CB3200634"
+        }
+      }
+    }
+  ]
+}

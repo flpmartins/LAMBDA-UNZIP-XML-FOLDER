@@ -1,0 +1,28 @@
+service: commercial-performance-report-cubo-get-all-requests
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  hello-world:
+    handler: index.handler
+    events:
+      - http: GET /hello-world
+
+  list-s3-objects:
+    handler: index.handler
+    events:
+      - http: GET /list-s3-objects
+      - s3:
+          bucket: flpmartins
+          event: s3:ObjectCreated:Put
+          rules:
+            - prefix: ''
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 5001
